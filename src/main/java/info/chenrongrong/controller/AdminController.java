@@ -20,4 +20,12 @@ public class AdminController {
         String body =  String.format("hello,{}"+name);
         return new ResponseEntity(name, HttpStatus.OK);
     }
+
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public ResponseEntity getGoodsBySkuId() {
+        String body =  String.format("hello,{}"+"CHEN");
+        return new ResponseEntity(body, HttpStatus.OK);
+    }
+
+
 }

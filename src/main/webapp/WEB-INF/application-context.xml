@@ -6,7 +6,7 @@
 
     <context:property-placeholder location="classpath:learnspring.properties"/>
 
-    <context:component-scan base-package="info.chenrongrong"/>
+    <import resource="spring-mybatis.xml"/>
 
    <!-- <import resource="spring-mvc.xml"/>-->
 </beans>
